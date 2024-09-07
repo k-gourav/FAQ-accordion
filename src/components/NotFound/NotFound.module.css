@@ -1,0 +1,5 @@
+.error__container {
+  background-image: url("../../assets/images/page-not-found.png");
+  display: block;
+  min-height: 100vh;
+}
