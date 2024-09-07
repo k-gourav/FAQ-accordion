@@ -1,21 +1,23 @@
 import React from "react";
 import star from "../assets/icons/icon-star.svg";
-import Accordion from "../components/Accordion/Accordion";
+import AccordionCard from "../components/Accordion/AccordionCard";
 import { accordionInformation } from "../utils/constants";
+import styles from '../components/Accordion/AccordionCard.module.css'
 
 
 const Home = () => {
   return (
     <main>
-      <div className="accordion-container">
-        <div className="accordion-title">
-          <img className="title-icon" src={star} alt="star-icon" />
-          <h1 className="title-name">FAQs</h1>
+      <div className={styles.accordion__container}>
+        <div className={styles.accordion__head}>
+          <img className={styles.accordion__logo} src={star} alt="star-icon" />
+          <h1 className={styles.accordion__name}>FAQs</h1>
         </div>
-        </div>
+        
       {accordionInformation.map((element) => (
-        <Accordion key={element.id} description={element} />
+        <AccordionCard key={element.id} description={element} />
       ))}
+      </div>
     </main>
   );
 };
