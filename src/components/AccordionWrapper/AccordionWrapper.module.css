@@ -1,0 +1,24 @@
+.main__element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../../assets/images/bg-desktop.svg") repeat-x;
+  background-size: 60%;
+  background-color: hsl(275, 100%, 97%);
+}
+.accordion__container {
+  width: 35%;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.accordion__head {
+  display: flex;
+  font-size: 1.5rem;
+  gap: 1.5rem;
+  border-bottom: none;
+}
+.accordion__body:first-of-type {
+  border-top: none;
+}

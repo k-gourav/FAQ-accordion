@@ -7,16 +7,24 @@ function AccordionCard({ description }) {
   const [expandContent, setExpandContent] = useState(false);
 
   return (
-    <div className={styles.accordion__body}>
-      <div className={styles.accordion__content}>
-        <div className={styles.accordion__title}>
-          <p className={styles.accordion_query}>{description.question}</p>
-          <button onClick={() => setExpandContent(!expandContent)} className={styles.accordion__btn}>
-            <img src={expandContent ? collapseImg : expandImg } alt={expandContent ? "collapse" : "expand"} />
-          </button>
-        </div>
-        {expandContent ? <p className={styles.accordion__descript}>{description.answer}</p> : ""}
+    <div className={styles.accordion__content}>
+      <div className={styles.accordion__title}>
+        <p className={styles.accordion_query}>{description.question}</p>
+        <button
+          onClick={() => setExpandContent(!expandContent)}
+          className={styles.accordion__btn}
+        >
+          <img
+            src={expandContent ? collapseImg : expandImg}
+            alt={expandContent ? "collapse" : "expand"}
+          />
+        </button>
       </div>
+      {expandContent ? (
+        <p className={styles.accordion__descript}>{description.answer}</p>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

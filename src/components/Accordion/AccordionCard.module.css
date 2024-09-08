@@ -1,46 +1,25 @@
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('../../assets/images/bg-desktop.svg') repeat-x;
-    background-size: 60%;
-    background-color: hsl(275, 100%, 97%);
+.accordion__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-top: 1px solid hsl(292, 16%, 49%);
+  padding: 1rem 0;
 }
-.accordion__container{
-    width: 35%;
-    padding: 1.5rem 2rem;
-    border-radius: 10px;
-    background-color: #fff;
+.accordion__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(292, 42%, 14%);
+  font-weight: 600;
 }
-.accordion__head{
-    display: flex;
-    font-size: 1.5rem;
-    gap: 1.5rem;
-    border-bottom: none;
+.accordion__btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
-.accordion__content{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    border-top: 1px solid rgb(220, 175, 220);
-    padding: 0.5rem 0;
-}
-.accordion__title{
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    color: hsl(292, 42%, 14%);
-    font-weight: 600;
-}
-.accordion__btn{
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-.accordion__descript{
-    color: hsl(292, 16%, 49%);
-    width: 90%;
-    font-size: 0.9rem;
-    line-height: 1.6;
+.accordion__descript {
+  color: hsl(292, 16%, 49%);
+  width: 90%;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
