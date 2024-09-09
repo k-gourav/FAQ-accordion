@@ -5,6 +5,9 @@
   border-bottom: 1px solid hsl(292, 16%, 49%);
   padding: 1rem 0;
 }
+.noBorder{
+  border-bottom: none;
+}
 .accordion__title {
   display: flex;
   justify-content: space-between;

@@ -3,11 +3,11 @@ import styles from "./AccordionCard.module.css";
 import expandImg from "../../assets/icons/icon-plus.svg";
 import collapseImg from "../../assets/icons/icon-minus.svg";
 
-function AccordionCard({ description }) {
+function AccordionCard({ description, isLast }) {
   const [expandContent, setExpandContent] = useState(false);
 
   return (
-    <div className={styles.accordion__content}>
+    <div className={`${styles.accordion__content} ${isLast ? styles.noBorder : ''}`}>
       <div className={styles.accordion__title}>
         <p className={styles.accordion_query}>{description.question}</p>
         <button

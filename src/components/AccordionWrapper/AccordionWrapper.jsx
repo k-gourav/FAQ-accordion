@@ -14,7 +14,7 @@ const AccordionWrapper = () => {
 
         <div className={styles.accordion__body}>
           {accordionInformation.map((element) => (
-            <AccordionCard key={element.id} description={element} />
+            <AccordionCard key={element.id} description={element} isLast={element.id === 4} />
           ))}
         </div>
       </div>
