@@ -49,7 +49,7 @@ user experience.
 ## Deployment
 
 The app is deployed on Netlify. You can view the live version
-[here](https://your-netlify-url.netlify.app).
+[here](https://accordion-faq-app.netlify.app/).
 
 ## Contributing
 
