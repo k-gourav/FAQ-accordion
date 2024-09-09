@@ -3,15 +3,16 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("../../assets/images/bg-desktop.svg") repeat-x;
-  background-size: 60%;
+  background: url("../../assets/images/bg-desktop.svg") repeat-x left top;
   background-color: hsl(275, 100%, 97%);
+  background-size: auto 35%, cover;
 }
 .accordion__container {
   width: 35%;
   padding: 1.5rem 2rem;
   border-radius: 10px;
   background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .accordion__head {
   display: flex;
@@ -19,6 +20,13 @@
   gap: 1.5rem;
   border-bottom: none;
 }
-.accordion__body:first-of-type {
-  border-top: none;
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  .main__element{
+    background: url("../../assets/images/bg-mobile.svg") repeat-x left top;
+  }
+  .accordion__container{
+    width: 85%;
+  }
 }

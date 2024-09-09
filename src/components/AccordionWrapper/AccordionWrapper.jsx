@@ -12,7 +12,7 @@ const AccordionWrapper = () => {
           <h1 className={styles.accordion__name}>FAQs</h1>
         </div>
 
-        <div className={styles.accordion_body}>
+        <div className={styles.accordion__body}>
           {accordionInformation.map((element) => (
             <AccordionCard key={element.id} description={element} />
           ))}
