@@ -25,7 +25,7 @@ user experience.
 1.  Clone the repository:
 
     ``` bash
-    git clone https://github.com/your-username/FAQ-accordion.git
+    git clone https://github.com/k-gourav/FAQ-accordion.git
     ```
 
 2.  Navigate to the project directory:
