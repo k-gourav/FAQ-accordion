@@ -5,6 +5,9 @@ frequently asked questions. Built with React, this project demonstrates
 clean UI design, smooth functionality, and simple CSS styling to enhance
 user experience.
 
+![photo-collage png (2)](https://github.com/user-attachments/assets/49d50aed-128b-413b-9202-453a9a356592)
+
+
 ## Features
 
 -   Expand and collapse FAQ items
